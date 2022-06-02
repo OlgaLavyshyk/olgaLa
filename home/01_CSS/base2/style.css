@@ -1,0 +1,45 @@
+@import"style.css";
+
+
+body{                   
+              font-family: 'Roboto';
+              height: 100 px;      
+}   
+
+h1 {          text-align :left; 
+              font-size: 25px;
+              font-family: 'Crimson Pro', serif;
+           
+}
+h2 {         font-family: 'Crimson Pro', serif;
+              font-style:italic;
+              text-align :left;
+}
+h3 {
+              font-family: 'Crimson Pro', serif;
+              text-align :left;
+}   
+
+P {
+              font-family: 'Bad Script';
+            
+} 
+span.underlined-text {
+              text-decoration: underline;
+
+}
+ 
+p {  
+              text-align: justify 
+} 
+h1,h2,h3 { 
+              text-align: right
+} 
+
+p { 
+              text-indent: 10mm ;
+              line-height: 20px;
+
+}
+
+

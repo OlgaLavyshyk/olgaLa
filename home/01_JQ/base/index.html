@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Document</title>
+              <style>
+                            table, td, th {
+                                         border: 1px solid grey;
+                                         border-top-style: dashed;
+                                         border-bottom-style: dashed;
+                                 }
+                             th{
+                                         background:  grey;
+                             }
+ 
+                             tr:nth-child(2n+1) {
+                                         background-color:rgb(205, 201, 201);
+                             } 
+                             
+                             
+ 
+               </style>
+</head>
+<body>
+   
+              <table>
+                        <tr>
+                          
+                            <th>ФИО</th><th>Пол</th><th>Должность</th><th>Дата рожд.</th><th>Данные 01</th><th>Данные 02</th></tr>
+                            <tr><td>Иванов Иван Иванович</td><td>М</td><td>начальник</td><td>01.01.1960</td><td>4567</td><td>3453</td></tr>
+                            <tr><td>Петрова Илона Петровна</td><td>Ж</td><td>секретарь</td><td>01.01.1989</td><td>98795</td><td>46523</td></tr>
+                            <tr><td>Сидоров Илья Игоревич</td><td>М</td><td>бухгалтер</td><td>01.01.1979</td><td>743434</td><td>987979</td></tr>
+                            <tr><td>Пупин Федор Федорович</td><td>М</td><td>водитель</td><td>01.01.1963</td><td>74323434</td><td>9232379</td></tr>
+                            <tr><td>Крупин Сергей Иванович</td><td>М</td><td>водитель 2</td><td>01.01.1983</td><td>3234534</td><td>923123379</td></tr>
+                            <tr><td colspan="6" style="text-align:center; background: #ffffff;">ДАННЫЕ О СОТРУДНИКАХ</td> </tr>
+                        </tr>
+
+                                        
+                                   
+               </table>         
+                        
+               <button>Нет скрытых строк</button>
+    
+               
+               </body>
+              
+
+    <script
+              src="https://code.jquery.com/jquery-3.6.0.min.js"
+              integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+              crossorigin="anonymous">
+    </script>
+    <script>
+           
+           $( document ).ready(function(){
+
+            $('tr').click(function() {
+	
+            $(this).closest("tr").hide();
+              
+        });
+              
+            $( "button" ).click(function() {
+            $( "tr" ).show( "slow" );
+        });
+        });               
+            $('button').click(function(){
+		    $('#tr').toggle();
+
+		if ($('#tr').is(':visible')){
+			
+			$(this).text('Нет скрытых строк');
+		}else {
+			
+            ($('#tr').is(':hidden'))  
+			
+			
+			$(this).text('Показать все строки');
+		}
+    	});
+
+    </script>
+</body> 
+</html>
